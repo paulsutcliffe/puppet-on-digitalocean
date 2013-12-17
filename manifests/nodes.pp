@@ -1,5 +1,7 @@
 node 'laboralmedical' {
   include nginx
+  include sudoers
+  include mysql
   
   user { 'paul':
     ensure => present,
